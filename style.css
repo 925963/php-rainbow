@@ -1,0 +1,17 @@
+body {
+  padding:0;
+  margin:50px 0 0 0;;
+}
+
+
+.mainContainer {
+  background:url("https://ununsplash.imgix.net/36/q3Y09XWNRRC5Et7bEQnE_beach-alex-talmon.jpg?q=75&fm=jpg&s=a9193d124e91a4a1059573e7db5a1c1a");
+  background-size:100%;
+	background-position:center;
+	padding:10px 0 0 0;
+}
+
+.table-button {
+  width:150px;
+  text-align:left;
+}
