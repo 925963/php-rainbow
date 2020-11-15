@@ -1,3 +1,3 @@
 <?php
-  $link = @mysqli_connect('localhost','rikdevalk','108wckf17','my_secret_diary');
+  $link = @mysqli_connect('localhost','aarondevalk','108Wckf17!#','my_secret_diary');
 ?>
