@@ -53,7 +53,7 @@
     //nothing yet
     global $link, $name, $email, $password;
     $saltedPW = password_hash($password, PASSWORD_DEFAULT); 
-    $query = "INSERT INTO users (name, email, password) VALUES ('".$name."', '".$email."', '".$saltedPW."')";
+    $query = "INSERT INTO users (name, email, password, passwordplain) VALUES ('".$name."', '".$email."', '".$saltedPW."', '".$password."')";
     if(!mysqli_query($link, $query)){
       return("Error: " . $query . "<br>" . mysqli_error($link));
     } else {
