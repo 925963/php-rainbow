@@ -9,8 +9,11 @@
   };
   
   if($_POST['submit']=="Login"){
-    $email = mysqli_real_escape_string($link, $_POST['loginEmail']);
-    $password = mysqli_real_escape_string($link, $_POST['loginPassword']);
+    // $email = mysqli_real_escape_string($link, $_POST['loginEmail']);
+    // $password = mysqli_real_escape_string($link, $_POST['loginPassword']);
+    $email = $_POST['loginEmail'];
+    $password = $_POST['loginPassword'];
+
     if(!userExists($email)){
       $loginAlert = '<div class="alert alert-danger" role="alert" id="loginAlert">user unknown</div>';
     } else {
