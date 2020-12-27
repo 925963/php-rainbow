@@ -40,7 +40,7 @@
   				<form class="navbar-form navbar-left" role="form" method="post">
             <div class="form-group">
       					<label class="sr-only" for="loginEmail">Email</label>
-      					<input type="email" name="loginEmail" class="form-control inputField" placeholder="email..." value="<?php echo $_POST['email']?>" />
+      					<input  name="loginEmail" class="form-control inputField" placeholder="email..." value="<?php echo $_POST['email']?>" />
       				</div>
       				<div class="form-group">
       					<label class="sr-only" for="password">Password</label>
