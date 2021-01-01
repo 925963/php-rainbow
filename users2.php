@@ -84,8 +84,7 @@
                 echo "</table></div>";
             } else {
                 echo "0 results";
-            };
-            echo "<div>".$result."</div">; 
+            }
       	  ?>
       	</div> 
       </div>
