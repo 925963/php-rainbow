@@ -51,13 +51,28 @@
   			</div> 
   		</div> 
   	</div> 
-  
-    <div class="container-fluid"> 
+    <div class="container-fluid">
+      <div class="row">
+        </br></br>
+        <div class="col-md-8 col-md-offset-2">
+          <form role="form" method="post">
+            <div class="form-group">
+                <label class="sr-only" for="user">User</label>
+                <input type="text" name="user" class="form-control inputField" placeholder="type name..." />
+              </div>    				
+              <input type="submit" class="btn btn-info" name="search" value="Search users" />
+          </form>
+        </div> 
+      </div>  
+
+     
     	<div class="row">
     	  </br></br>
       	<div class="col-md-8 col-md-offset-2">
       	  <?php
-      	    $sql = "SELECT * FROM users";
+
+            $searchUser = $_POST['user']
+      	    $sql = "SELECT * FROM users WHERE name = '$searchUser'";
             $result = $link->query($sql);
             
             if ($result->num_rows > 0) {
