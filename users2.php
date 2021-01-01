@@ -70,8 +70,8 @@
     	  </br></br>
       	<div class="col-md-8 col-md-offset-2">
       	  <?php
-
-            $searchUser = $_POST['user'];
+            $searchUser = mysqli_real_escape_string($link, $_POST['user']);
+            // $searchUser = $_POST['user'];
       	    $sql = "SELECT userid, name, email FROM users WHERE name = '$searchUser'";
             $result = $link->query($sql);
             
