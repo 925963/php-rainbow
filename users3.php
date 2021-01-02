@@ -70,10 +70,10 @@
     	  </br></br>
       	<div class="col-md-8 col-md-offset-2">
       	  <?php
-            $searchUser = mysqli_real_escape_string($link, $_POST['user']);
-            // $searchUser = $_POST['user'];
+            // $searchUser = mysqli_real_escape_string($link, $_POST['user']);
+            $searchUser = $_POST['user'];
       	    $sql = "SELECT userid, name, email FROM users WHERE name = ?"; // SQL query with placeholder or parameter
-            $stmt = $conn->prepare($sql);
+            $stmt = $link->prepare($sql);
             $stmt->bind_param("s", $searchUser);
             $stmt->execute();
             $result = $stmt->get_result(); // get MySQLi result
